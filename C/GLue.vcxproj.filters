@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Glue">
+      <UniqueIdentifier>{d1d07728-81e8-4f64-8740-92a8616b7003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{92b5dbc2-c589-483e-a5e0-08c0ee38efd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Lua">
+      <UniqueIdentifier>{e58f8ffd-ce5f-456e-900f-a395498006d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Glue\HeaderFiles">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Glue\SourceFiles">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Glue.c">
+      <Filter>Glue\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Module.c">
+      <Filter>Glue\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PullValues.c">
+      <Filter>Glue\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PushValues.c">
+      <Filter>Glue\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Registry.c">
+      <Filter>Glue\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Shared.c">
+      <Filter>Glue\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util.c">
+      <Filter>Glue\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BasicString.c">
+      <Filter>Glue\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tlsf.c">
+      <Filter>Glue\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MemoryAllocators.c">
+      <Filter>Glue\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LinkLua.c">
+      <Filter>Glue\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OutputStream.c">
+      <Filter>Glue\SourceFiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\Glue.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Module.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\PullValues.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\PushValues.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Registry.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Shared.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Util.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\BasicString.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\labview\extcode.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\target.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\tlsf.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\MemoryAllocators.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\queue.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\ringbuffer.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\OutputStreamType.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\OutputStream.h">
+      <Filter>Glue\HeaderFiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

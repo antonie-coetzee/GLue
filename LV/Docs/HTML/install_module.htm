@@ -1,0 +1,210 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>VI and function reference &gt; Basic &gt; Modules &gt; Install Module</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Install Module">
+   <meta name="description" content="Install Module">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { 
+   margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }  
+
+div#printheader { 
+   display: none;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>  
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "install_module.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Install Module</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="vi_and_function_reference.htm">VI and function reference</a> &gt; Basic &gt; Modules&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Install Module</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="close_instance.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="vi_and_function_reference.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="list_modules.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<BR><IMG SRC="lvtemp0343201368772c.jpg"  ALT="Install Module"><BR></B>
+<BR>Adds a MLua module to the provided instance. The name of the module is retrieved using the "__name" command. If no name is provided the module becomes the new default module. In addition, the "__install" command is sent to the module allowing it the option to provide a Lua install script. This script is executed after the module has been added to the module list.<BR>
+<BR>
+<B>Parameter(s) </B><BR>
+-----------------<BR>
+<BR>
+- <B>MLua in:</B> Reference to the MLua instance.<BR>
+<BR>
+- <B>MLua Module:</B> A LabVIEW VI reference to a MLua module which exposes LabVIEW code to Lua.<BR>
+<BR>
+- <B>User Data:</B> User supplied data that will be made available each time the module is invoked from Lua.<BR>
+<BR>
+- <B>ms timeout (-1):</B> The time to wait for the MLua reference to become available. A value of '-1' specifies an infinite timeout.<BR>
+<BR>
+- <B>error in:</B> Describes error conditions that occur before this VI runs. This input provides standard error in functionality. <BR>
+<BR>
+- <B>MLua out:</B> Reference to the MLua instance.<BR>
+<BR>
+- <B>error out:</B> Contains error information. This output provides standard error out functionality. </B>
+</BODY>
+</HTML></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt; font-weight: bold;">Overview:</span></p>
+<p>&nbsp;</p>
+<p>MLua modules and their function is explained in the <span style="font-style: italic;"><a href="modules.htm" class="topiclink">Modules</a></span> section of<span style="font-style: italic;"> <a href="getting_started.htm" class="topiclink">Getting started</a>. </span>The <span style="font-style: italic;">Install Module </span>VI adds a module reference to the provided MLua instance. MLua indexes modules by name, thus before the module is registered the &quot;__name&quot; command is invoked on the module. If a non-empty string is returned it is used as the name of the module when it is registered. After the module is registered, a second command is invoked. This command &quot;__install&quot; requests for a string that represents a Lua script that should be executed. </p>
+<p>&nbsp;</p>
+<p>If no name is returned from the module or a empty name string is returned, then the module becomes the default module. The methods used to access and use modules is discussed in the <span style="font-style: italic;"><a href="mlua_reference.htm" class="topiclink">MLua reference</a> section.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-size: 12pt; font-weight: bold;">Usage:</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p>A strictly typed VI reference is used to specify the module. When installing the module, some custom user data can be assigned. This data will be made available each time the module is invoked.</p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: center;"><div style="margin:0px auto 0px auto;width:378px;padding:0px 0px 0px 0px"><img src="install_module_ex01.png" width="378" height="213" style="border:none" alt="Installing a module with custom user data" title="Installing a module with custom user data" /><p style="text-align:center"><span class="f_ImageCaption">Installing a module with custom user data</span></p></div></div>
+<p style="text-align: center;"><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

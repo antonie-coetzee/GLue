@@ -1,0 +1,17 @@
+9750, Lua internal error
+9751, Incorrect number of arguments for LabVIEW call
+9752, Module name must be string type
+9753, Command must be string type
+9754, Could not set variant name
+9755, Module not found
+9756, Returned table must be of Cluster type
+9757, Table does not have a LabVIEW type identifier
+9758, Data translate recursion limit reached
+9759, Module name not specified
+9760, Module not found
+9761, Function not found
+9762, Could not convert Lua cluster array table into LabVIEW cluster array
+9763, Cluster elements must have a non-empty label name
+9764, Empty cluster table cannot be converted into LabVIEW cluster
+9765, Module exits
+9766, Module VI reference not valid
